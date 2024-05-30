@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 180px;
+  /* background-color: #f0f0f0; */
+}
+
+.login-container {
+  padding: 50px;
+  border: 20px solid #aaa;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  /* background-color: #ffffff; */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-bottom: 10px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .login-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 40px; /* Adjust padding for medium screens */
+  }
+
+  .login-container h1 {
+    font-size: 22px;
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    padding: 8px;
+  }
+
+  .login-form button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px; /* Adjust padding for small screens */
+  }
+
+  .login-container h1 {
+    font-size: 20px;
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    padding: 6px;
+  }
+
+  .login-form button {
+    padding: 6px;
+  }
+}
